@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% autoescape false %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Student Profile</title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+
+  <body>
+
+    <!-- Header -->
+    <header>
+      <h1>Student Pofile</h1>
+    </header>
+
+   
+    <!-- Comments -->
+    <!-- {% if not search_query %}
+      <h3>Showing all comments:</h3>
+    {% else %}
+      <h3>Showing comments containing "{{ search_query }}":</h3>
+    {% endif %} -->
+
+    <!-- {% for comment in comments %}
+      <div>
+        <p>{{ comment }}</p>
+      </div>
+    {% endfor %} -->
+    <div>
+      <p>Roll No: {{ roll_no }}</p>
+      <p>Name: {{ name }} </p>
+      <p>Gender: {{ gender }}</p>
+      <p>E-Mail: {{ email }}</p>
+      <p>Mess-id: {{ mess_id }}</p>
+    </div>
+
+
+
+  </body>
+</html>
+{% endautoescape %}
